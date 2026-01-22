@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    
+</head>
+<style>
+    /* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form styling */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+/* Fieldset and legend */
+fieldset {
+  border: none;
+  margin-bottom: 15px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Inputs and textarea */
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Button */
+button {
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+</style>
+<body>
+    <form action="#" method="post">
+        <fieldset >
+            <legend>Contact Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required maxlength="50">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="[0-9]{10}" maxlength="10"
+            placeholder="10digits only" required>
+        </fieldset>
+        <fieldset>
+            <legend>Message</legend>
+            <textarea name="message" id="message" required maxlength="500"></textarea>
+        </fieldset>
+        <button type="submit">Send Message</button>
+ </form>
+</body>
+</html>
